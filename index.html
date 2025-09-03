@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daystar Institute of Data Science, AI & Cybersecurity (DIDSAC)</title>
+  <meta name="description" content="DIDSAC — building research capacity in data science, AI, and cybersecurity for Africa through datasets, policy-relevant insight, and hand‑in‑hand partnerships (Urunana)." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020;          /* deep blue */
+      --bg-soft:#121935;     /* softer panel */
+      --brand:#3ee0c2;       /* teal */
+      --brand-2:#8ab6ff;     /* light blue */
+      --text:#e7ecff;        /* off white */
+      --muted:#aeb7d4;       /* muted text */
+      --accent:#ffd166;      /* accent */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1120px;margin:0 auto;padding:0 1rem}
+    header{position:sticky;top:0;background:linear-gradient(180deg, rgba(11,16,32,.95), rgba(11,16,32,.8));backdrop-filter:blur(6px);z-index:50;border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+    .brand{display:flex;gap:.75rem;align-items:center}
+    .brand .logo{width:36px;height:36px;display:grid;place-items:center;border-radius:9px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018;font-weight:800}
+    .brand h1{font-size:1rem;margin:0;font-weight:700;letter-spacing:.2px}
+    nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+    nav a{color:var(--text);opacity:.9}
+    .hero{padding:4.5rem 0 2.5rem;position:relative;overflow:hidden}
+    .hero h2{font-size:2.2rem;margin:.5rem 0 1rem;line-height:1.15}
+    .hero p{max-width:760px;color:var(--muted);font-size:1.05rem}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(62,224,194,.12);color:var(--brand);padding:.4rem .7rem;border:1px solid rgba(62,224,194,.35);border-radius:999px;font-weight:600;font-size:.85rem}
+    .cta-row{display:flex;gap:.75rem;margin-top:1.2rem;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border-radius:.7rem;border:1px solid rgba(255,255,255,.12);background:var(--brand);color:#001018;font-weight:700}
+    .btn.secondary{background:transparent;color:var(--text)}
+    .grid{display:grid;gap:1rem}
+    .panels{grid-template-columns:repeat(12,1fr)}
+    .card{background:var(--bg-soft);border:1px solid rgba(255,255,255,.06);padding:1rem;border-radius:1rem}
+    .card h3{margin:.2rem 0 .4rem}
+    .kpis{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:1rem}
+    .kpi{background:linear-gradient(180deg,rgba(138,182,255,.12),rgba(62,224,194,.08));border:1px solid rgba(255,255,255,.08);padding:1rem;border-radius:1rem}
+    .section{padding:2.2rem 0}
+    .section h2{font-size:1.6rem;margin:.2rem 0 .8rem}
+    .list{display:grid;gap:.75rem}
+    .pill{display:inline-block;padding:.25rem .6rem;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);font-size:.85rem}
+    footer{padding:2rem 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+
+    /* responsive */
+    @media (min-width: 880px){
+      .hero{padding:6rem 0 3rem}
+      .hero h2{font-size:3rem}
+      .panels{grid-template-columns:repeat(12,1fr)}
+      .panel-left{grid-column:span 7}
+      .panel-right{grid-column:span 5}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AI</div>
+        <h1>DIDSAC • Daystar Institute of Data Science, AI & Cybersecurity</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#focus">Focus</a></li>
+          <li><a href="#research">Research & Policy</a></li>
+          <li><a href="#partners">Partnerships</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container grid panels">
+        <div class="panel-left">
+          <span class="badge">Urunana — hand in hand</span>
+          <h2>Building Africa’s research capacity in Data Science, AI & Cybersecurity.</h2>
+          <p>
+            We work <em>hand in hand</em> with students, researchers, policymakers, and industry to collect and curate
+            high‑quality datasets, advance open research, and translate data into policy‑relevant insight.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#partners">Become a Partner</a>
+            <a class="btn secondary" href="#research">Explore Our Focus</a>
+          </div>
+        </div>
+        <div class="panel-right">
+          <div class="card">
+            <h3>What we do</h3>
+            <div class="list">
+              <div class="pill">Open, policy‑ready datasets</div>
+              <div class="pill">Capacity building & research mentorship</div>
+              <div class="pill">Applied AI for public interest</div>
+              <div class="pill">Cybersecurity awareness & resilience</div>
+            </div>
+          </div>
+          <div class="kpis grid">
+            <div class="kpi">
+              <strong>Research‑first</strong><br><span>Evidence for real decisions</span>
+            </div>
+            <div class="kpi">
+              <strong>Collaboration</strong><br><span>Academia × Industry × Government</span>
+            </div>
+            <div class="kpi">
+              <strong>Capacity</strong><br><span>Training, labs & communities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section">
+      <div class="container">
+        <h2>Our Mission</h2>
+        <p style="color:var(--muted)">
+          To strengthen Africa’s ability to generate and use trustworthy data and AI for public good — from ethical
+          data collection and stewardship to rigorous analysis and secure deployment.
+        </p>
+      </div>
+    </section>
+
+    <section id="focus" class="section">
+      <div class="container">
+        <h2>Focus Areas</h2>
+        <div class="grid kpis">
+          <div class="card"><h3>Datasets</h3><p style="color:var(--muted)">Design, documentation, and governance of open, high‑quality datasets fit for research and policy.</p></div>
+          <div class="card"><h3>AI for Public Interest</h3><p style="color:var(--muted)">Transparent models for health, education, agriculture, finance, and civic services.</p></div>
+          <div class="card"><h3>Cybersecurity</h3><p style="color:var(--muted)">Secure infrastructure, awareness training, and risk‑informed practices across institutions.</p></div>
+          <div class="card"><h3>Capacity Building</h3><p style="color:var(--muted)">Mentorship, seminars, and hands‑on labs that develop researchers and practitioners.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <h2>Research & Policy</h2>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem">
+          <div class="card">
+            <h3>Open Research</h3>
+            <p style="color:var(--muted)">We promote reproducible research with shared code, data dictionaries, and documented pipelines.</p>
+          </div>
+          <div class="card">
+            <h3>Policy Engagement</h3>
+            <p style="color:var(--muted)">We translate findings into briefings and convene roundtables for evidence‑based decisions.</p>
+          </div>
+          <div class="card">
+            <h3>Ethics & Governance</h3>
+            <p style="color:var(--muted)">Privacy, consent, fairness, and transparency are embedded across our projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="section">
+      <div class="container">
+        <h2>Partner With Us</h2>
+        <p style="color:var(--muted)">In the spirit of <em>Urunana — “hand in hand”</em>, we invite universities, research labs, NGOs, public agencies,
+          companies, and communities to collaborate on datasets, research, and skills development.</p>
+        <div class="cta-row">
+          <a class="btn" href="mailto:contact@didsac.org?subject=Partnership%20Enquiry%20—%20DIDSAC">Start a conversation</a>
+          <a class="btn secondary" href="#contact">Media & enquiries</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Launch">
+      <div class="container card">
+        <strong>Official launch — coming soon.</strong>
+        <p style="margin:.4rem 0 0;color:var(--muted)">Sign up for updates and be the first to hear about calls for collaboration, datasets, and events.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Get updates</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p style="color:var(--muted)">Email: <a href="mailto:contact@didsac.org">contact@didsac.org</a> • LinkedIn: <a href="#">/company/didsac</a> • X/Twitter: <a href="#">@didsac</a></p>
+        <p style="color:var(--muted)">Replace these placeholders with your official handles and update the mailto link.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Daystar Institute of Data Science, AI & Cybersecurity (DIDSAC). All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
