@@ -11,39 +11,36 @@
       --gold: #FFD700;
       --light-bg: #f8f9fa;
     }
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { line-height: 1.6; color: #222; background: #fff; }
+    nav {
+      background: var(--blue);
+      padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
     }
-    body { line-height: 1.6; color: #222; }
+    nav h1 { color: var(--gold); font-size: 1.3rem; }
+    nav ul { list-style: none; display: flex; gap: 1rem; }
+    nav ul li a {
+      color: white; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    }
+    nav ul li a:hover { color: var(--gold); }
     header {
       background: var(--blue);
       color: white;
       padding: 3rem 2rem;
       text-align: center;
     }
-    header h1 { font-size: 2rem; margin-bottom: 1rem; }
+    header h2 { font-size: 2rem; margin-bottom: 1rem; }
     header p { font-size: 1.2rem; margin-bottom: 1.5rem; }
     header a {
-      background: var(--gold);
-      color: var(--blue);
-      padding: 0.7rem 1.2rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+      background: var(--gold); color: var(--blue);
+      padding: 0.7rem 1.2rem; text-decoration: none;
+      font-weight: bold; border-radius: 5px;
     }
     section {
-      padding: 3rem 2rem;
-      max-width: 1100px;
-      margin: auto;
+      padding: 3rem 2rem; max-width: 1100px; margin: auto;
     }
-    section h2 {
-      color: var(--blue);
-      margin-bottom: 1rem;
-      font-size: 1.6rem;
-      border-left: 6px solid var(--gold);
-      padding-left: 10px;
-    }
+    section h3 { color: var(--blue); margin-bottom: 1rem; font-size: 1.4rem; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -55,11 +52,6 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .blue-section {
-      background: var(--blue);
-      color: white;
-    }
-    .blue-section h2 { color: var(--gold); }
     footer {
       background: var(--blue);
       color: white;
@@ -67,101 +59,43 @@
       text-align: center;
       font-size: 0.9rem;
     }
-    form input, form textarea, form button {
-      width: 100%; padding: 0.7rem; margin: 0.5rem 0;
-      border: 1px solid #ccc; border-radius: 5px;
-      font-size: 1rem;
-    }
-    form button {
-      background: var(--gold);
-      color: var(--blue);
-      font-weight: bold;
-      cursor: pointer;
-      border: none;
-    }
-    form button:hover { background: #e6c200; }
-    a { color: var(--blue); }
   </style>
 </head>
 <body>
 
+  <nav>
+    <h1>DIDSAC</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="partnerships.html">Partnerships</a></li>
+      <li><a href="shortcourses.html">Short Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>DIDSAC • Daystar Institute of Data Science, AI & Cybersecurity</h1>
+    <h2>DIDSAC • Daystar Institute of Data Science, AI & Cybersecurity</h2>
     <p>Building Africa’s research capacity in Data Science, AI & Cybersecurity</p>
-    <a href="https://bit.ly/4didsac" target="_blank">Explore Short Courses</a>
+    <a href="shortcourses.html">Explore Short Courses</a>
   </header>
 
   <section>
-    <h2>Our Mission</h2>
+    <h3>Our Mission</h3>
     <p>To strengthen Africa’s ability to generate and use trustworthy data and AI for public good — from ethical data collection and stewardship to rigorous analysis and secure deployment.</p>
   </section>
 
   <section>
-    <h2>Focus Areas</h2>
+    <h3>Focus Areas</h3>
     <div class="grid">
-      <div class="card"><h3>Datasets</h3><p>Design, documentation, and governance of open, high-quality datasets fit for research and policy.</p></div>
-      <div class="card"><h3>AI for Public Interest</h3><p>Transparent models for health, education, agriculture, finance, and civic services.</p></div>
-      <div class="card"><h3>Cybersecurity</h3><p>Secure infrastructure, awareness training, and risk-informed practices across institutions.</p></div>
-      <div class="card"><h3>Capacity Building</h3><p>Mentorship, seminars, and hands-on labs that develop researchers and practitioners.</p></div>
+      <div class="card"><h4>Datasets</h4><p>Design, documentation, and governance of open, high-quality datasets fit for research and policy.</p></div>
+      <div class="card"><h4>AI for Public Interest</h4><p>Transparent models for health, education, agriculture, finance, and civic services.</p></div>
+      <div class="card"><h4>Cybersecurity</h4><p>Secure infrastructure, awareness training, and risk-informed practices across institutions.</p></div>
+      <div class="card"><h4>Capacity Building</h4><p>Mentorship, seminars, and hands-on labs that develop researchers and practitioners.</p></div>
     </div>
-  </section>
-
-  <section>
-    <h2>Research & Policy</h2>
-    <div class="grid">
-      <div class="card"><h3>Open Research</h3><p>We promote reproducible research with shared code, data dictionaries, and documented pipelines.</p></div>
-      <div class="card"><h3>Policy Engagement</h3><p>We translate findings into briefings and convene roundtables for evidence-based decisions.</p></div>
-      <div class="card"><h3>Ethics & Governance</h3><p>Privacy, consent, fairness, and transparency are embedded across our projects.</p></div>
-    </div>
-  </section>
-
-  <section class="blue-section">
-    <h2>Events</h2>
-    <ul>
-      <li>📅 Official Launch – Coming Soon</li>
-      <li>📊 Research & Policy Roundtable – TBA</li>
-      <li>💻 Community Training Workshops – September 2025</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Publications</h2>
-    <div class="grid">
-      <div class="card"><h3>Policy Briefs</h3><p>Summaries of key findings to inform decision makers.</p></div>
-      <div class="card"><h3>Research Papers</h3><p>Peer-reviewed outputs advancing open science in Africa.</p></div>
-      <div class="card"><h3>Datasets</h3><p>Curated, policy-ready datasets openly shared for public use.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card"><h3>AI in Education</h3><p>Exploring adaptive learning models for African contexts.</p></div>
-      <div class="card"><h3>Cybersecurity Awareness</h3><p>Building digital safety skills in universities and communities.</p></div>
-      <div class="card"><h3>Open Data for Policy</h3><p>Collecting datasets that directly support government planning.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Partnerships</h2>
-    <p>We collaborate with leading organizations to advance Africa’s data and AI ecosystem:</p>
-    <ul>
-      <li>African Centre of Excellence in Data Science (ACEDS)</li>
-      <li>Qhala</li>
-      <li>ALX</li>
-      <li>AfChix</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Talk to Us</h2>
-    <form action="mailto:thinkdata@daystar.ac.ke" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Or email us directly: <a href="mailto:thinkdata@daystar.ac.ke">thinkdata@daystar.ac.ke</a></p>
   </section>
 
   <footer>
